@@ -1,0 +1,18 @@
+/* 
+you need to set the height of the html and body to
+100%. Otherwise, the height will be limited to the
+height of the content on the page.
+*/
+
+html,
+body {
+  height: 100%;
+}
+
+.content {
+  background-color: #619b8a;
+  font-size: 1rem;
+  /* unit can be px, rem, %  */
+  width: 50%; /* 20rem */
+  height: 15rem; /* 50% */
+}
