@@ -1,0 +1,16 @@
+/* change the primary color and the entire "theme" is modified */
+:root {
+  --primary-color: hsl(203, 37%, 22%);
+  --secundary-color: hsl(44, 97%, 63%);
+  --small-gap: 1rem;
+}
+
+.content {
+  color: var(--primary-color);
+}
+
+.title {
+  padding: var(--small-gap);
+  background-color: var(--primary-color);
+  color: var(--secundary-color);
+}
