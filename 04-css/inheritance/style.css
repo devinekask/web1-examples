@@ -1,0 +1,18 @@
+.topic {
+  font-size: 14px;
+  background-color: #fe7f2d;
+}
+
+.topic__title {
+  font-size: 38px;
+}
+
+.topic__content {
+  /* other properties are possible */
+  /* but font-size is inherited */
+}
+
+.topic__content--intro {
+  font-size: 18px;
+  background-color: #fcca46;
+}
