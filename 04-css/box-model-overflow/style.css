@@ -1,0 +1,6 @@
+.content {
+  background-color: #a1c181;
+  width: 20rem;
+  height: 10rem;
+  overflow: visible; /* hidden, scroll */
+}
