@@ -1,0 +1,24 @@
+:root {
+  --charcoal: #233d4dff;
+  --pumpkin: #fe7f2dff;
+  --sunglow: #fcca46ff;
+  --olivine: #a1c181ff;
+  --polished-pine: #619b8aff;
+
+  --s-2: 0.4rem;
+  --s-1: 0.8rem;
+  --s0: 1rem;
+  --s1: ;
+}
+
+.content {
+  background-color: var(--olivine);
+  border: var(--s-2) dotted var(--charcoal);
+}
+
+.content__title {
+  background-color: var(--sunglow);
+  margin: var(--s0);
+  padding: var(--s-1);
+  border: var(--s-2) solid var(--polished-pine);
+}
