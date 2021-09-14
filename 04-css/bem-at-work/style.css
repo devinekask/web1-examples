@@ -1,0 +1,13 @@
+.menu {
+  background-color: #fcca46;
+  font-size: 18px;
+}
+
+.menu__item {
+  color: white;
+  background-color: #233d4d;
+}
+
+.menu__item--active {
+  background-color: #fe7f2d;
+}
