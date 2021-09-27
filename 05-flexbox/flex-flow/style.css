@@ -1,0 +1,19 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.container{
+  display: flex;
+  flex-flow: row;
+  /*flex-flow: column-reverse nowrap;*/
+}
+
+.container__item{
+  margin: 3rem;
+  padding: 1rem;
+  background-color: silver;
+}
