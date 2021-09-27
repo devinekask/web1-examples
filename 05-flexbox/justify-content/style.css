@@ -1,0 +1,19 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.container{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+}
+
+.container__item{
+  list-style: none;
+  padding: 1rem;
+  background-color: silver;
+}
