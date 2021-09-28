@@ -1,0 +1,24 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Note: the container must have a height of 100% */
+html,body,.container{
+  height: 100%;
+}
+
+.container{
+  display: flex;
+  flex-flow: row;
+  justify-content:space-between;
+  align-items: flex-start;
+}
+
+.container__item{
+  padding: 1rem;
+  background-color: silver;
+}
