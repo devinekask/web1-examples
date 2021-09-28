@@ -1,0 +1,27 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  height: 100%;
+}
+
+.post__content{
+  background-color: #233D4D;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  gap: 2rem 4rem;
+}
+
+.content__part{
+  background-color: #FCCA46;
+  padding: 2rem;
+  width: 30ch
+}
