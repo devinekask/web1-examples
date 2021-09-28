@@ -1,0 +1,32 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html,body,.post{
+  height: 100%;
+}
+
+.post__title{
+  background-color: lightgray;
+}
+
+.post__content{
+  background-color: #233D4D;
+  display:flex;
+  flex-flow: row ;
+}
+
+.content__part{
+  background-color: #FCCA46;
+  margin: 1rem;
+  padding: 2rem;
+  flex: 1;
+}
+
+.content__part--big{
+  flex-grow: 4;
+}
