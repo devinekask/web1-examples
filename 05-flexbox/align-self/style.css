@@ -1,0 +1,35 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html,body,.post{
+  height: 100%;
+}
+
+.post__title{
+  background-color: lightgray;
+}
+
+.post__content{
+  background-color: #233D4D;
+  height: 100%;
+  display:flex;
+  flex-flow: row ;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.content__part{
+  width: 25rem;
+  background-color: #FCCA46;
+  margin: 1rem;
+  padding: 2rem;
+}
+
+.content__part--bottom{
+  align-self: flex-end;
+}
