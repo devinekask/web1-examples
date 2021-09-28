@@ -15,7 +15,7 @@ html,body,.container{
   display: flex;
   flex-flow: row;
   justify-content:space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .container__item{
