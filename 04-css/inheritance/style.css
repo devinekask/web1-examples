@@ -1,18 +1,15 @@
-.topic {
-  font-size: 14px;
-  background-color: #fe7f2d;
+p {
+  color: #233D4D;
+  background-color: #FCCA46;
+  font-size: 2rem;
+
+  /* notice child elements don't inherit the following */
+  padding: 3rem;
+  border: solid .4rem #A1C181;
 }
 
-.topic__title {
-  font-size: 38px;
-}
 
-.topic__content {
-  /* other properties are possible */
-  /* but font-size is inherited */
-}
-
-.topic__content--intro {
-  font-size: 18px;
-  background-color: #fcca46;
+span {
+  /* color: #FE7F2D; /* can be overwritten */
+  font-weight: bold;
 }
