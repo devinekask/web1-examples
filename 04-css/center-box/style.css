@@ -10,5 +10,6 @@ html {
 .container {
   background-color: #fe7f2d;
   margin: 0 auto;
-  width: 60rem;
+  /* width: 60rem;*/
+  max-width: 60rem;
 }
