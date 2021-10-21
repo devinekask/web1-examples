@@ -1,0 +1,23 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body, .container  {
+  height: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  background-color: #FCCA46;
+}
+
+.child {
+  background-color: #233D4D;
+  margin: .25rem;
+}
