@@ -1,0 +1,33 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body, .container  {
+  height: 100%;
+}
+
+.container {
+  display: grid;
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+  grid-gap: 1rem;
+  background-color: #FCCA46;
+}
+
+.child {
+  color: white;
+  background-color: #233D4D;
+  font-size: 2rem;
+  padding-top: 1em;
+  text-align: center;
+}
+
+.child--placed{
+  grid-column: 3;
+  grid-row: 2;
+  background-color: #A1C181;
+}
