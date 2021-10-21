@@ -1,0 +1,26 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body, .container  {
+  height: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr 2rem);
+  grid-template-rows: repeat(3, 1fr);
+  /* or using the shorthand property */
+  /*grid-template: repeat(4, 1fr) / repeat(4, 1fr); */
+  background-color: #FCCA46;
+}
+
+.child {
+  color: white;
+  background-color: #233D4D;
+  margin: .25rem;
+}
