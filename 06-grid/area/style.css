@@ -1,0 +1,42 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body, .container  {
+  height: 100%;
+}
+
+.container {
+  max-width: 40rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  grid-template-rows: 10rem 1fr;
+  /*grid-template-areas:
+    "header header"
+    "aside content";*/
+  grid-template-areas:
+    ". header"
+    "aside content";
+  gap: 1rem;
+  background-color: #233D4D;
+}
+
+.header{
+  grid-area: header;
+  background-color: #FE7F2D;
+}
+
+.aside {
+  grid-area: aside;
+  background-color: #FCCA46;
+}
+
+.content{
+  grid-area: content;
+  background-color: #A1C181;
+}
