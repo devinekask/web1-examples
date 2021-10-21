@@ -1,0 +1,37 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body, .container  {
+  height: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+  gap: 1rem;
+  /*grid-auto-flow: dense column;*/
+  grid-auto-flow: column;
+
+  max-width: 40rem;
+  margin: 0 auto;
+  background-color: #233D4D;
+}
+
+.child{
+  background-color: #A1C181;
+  color: #233D4D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.child--placed{
+  grid-row: 4;
+  background-color: #FE7F2D;
+}
