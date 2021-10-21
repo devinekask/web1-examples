@@ -12,7 +12,6 @@ html, body, .container  {
 
 .container {
   display: grid;
-  display: grid;
   grid-template: repeat(4, 1fr) / repeat(4, 1fr);
   grid-gap: 1rem;
   background-color: #FCCA46;

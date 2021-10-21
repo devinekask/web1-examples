@@ -26,7 +26,7 @@ html, body, .container  {
 }
 
 .child--placed{
-  grid-column: -3;
-  grid-row: -4;
+  grid-column: 2/4;
+  grid-row: 2/4;
   background-color: #A1C181;
 }
