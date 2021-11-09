@@ -1,0 +1,43 @@
+/* font source: https://fonts.google.com/specimen/Fraunces*/
+
+/*
+  SOFT
+  WONK
+  opsz
+  wght
+  */
+
+@font-face{
+  font-family: "Fraunces";
+  src: url('../assets/fonts/fraunces/Fraunces-Variable.ttf') format('truetype');
+
+}
+
+
+body {
+  font-family: Fraunces, sans-serif;
+  font-weight: 400;
+}
+
+em {
+  /* note that the italic version is browser-generated here*/
+  font-style: italic;
+}
+
+strong {
+  font-variation-settings: 'wght' 100;
+}
+
+
+h1 {
+  font-variation-settings: 'wght' 700, 'SOFT' 100;
+}
+
+.author {
+  font-style: italic;
+}
+
+.name {  
+  font-weight: 700;
+  font-variation-settings: 'wght' 800, 'opsz' 100;
+}
