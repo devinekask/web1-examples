@@ -29,6 +29,12 @@
 }
 
 
+
+em {
+  font-style: italic;
+}
+
+
 body {
   font-family: CooperHewitt, sans-serif;
 }
