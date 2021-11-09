@@ -1,0 +1,46 @@
+/* font source: https://fontlibrary.org/en/font/cooper-hewitt*/
+
+@font-face{
+  font-family: "CooperHewitt";
+  src: url('../assets/fonts/cooper/CooperHewitt-Book.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "CooperHewitt";
+  src: url('../assets/fonts/cooper/CooperHewitt-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "CooperHewitt";
+  src: url('../assets/fonts/cooper/CooperHewitt-BookItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face{
+  font-family: "CooperHewitt";
+  src: url('../assets/fonts/cooper/CooperHewitt-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+body {
+  font-family: CooperHewitt, sans-serif;
+}
+
+body {
+  font-weight: 400;
+}
+
+.author {
+  font-style: italic;
+}
+
+.name {  
+  font-weight: bold;
+}
