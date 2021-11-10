@@ -75,3 +75,7 @@ h1 {
   font-feature-settings: "tnum";
 }
 
+.multiple-features {
+  font-feature-settings: "zero", "ss01", "cv11" ;
+}
+
