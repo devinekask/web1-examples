@@ -1,28 +1,12 @@
-/* font source: https://fonts.google.com/specimen/Fraunces*/
-
-/*
-  SOFT
-  WONK
-  opsz
-  wght
-  */
-
-@font-face{
-  font-family: "Inter";
-  src: url('../assets/fonts/Inter-SemiBold.woff2') format('woff2');
-  font-weight: 600;
-}
-
-@font-face{
-  font-family: "Inter";
-  src: url('../assets/fonts/Inter-Regular.woff2') format('woff2');
-  font-weight: 400;
+@font-face {
+    font-family: 'Inter var';
+    src: url(../assets/fonts/Inter.var.woff2) format('woff2-variations');
 }
 
 body {
   padding: 1.5em;
   font-size: 1.25rem;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter var", sans-serif;
   line-height: 1.5;
 }
 
@@ -35,7 +19,7 @@ p {
 h1, 
 h2,
 h3 {
-  font-weight: 600;
+  font-variation-settings: 'wght' 600;
 }
 
 h1 {
