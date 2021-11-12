@@ -1,0 +1,49 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+body{
+  font-family: Helvetica, Arital, sans-serif;
+  font-size: 1.2rem;
+}
+
+
+/*
+Aligning the text of the title with the pseudo elements
+*/
+.title{
+  display: flex;
+  align-items: center;
+}
+
+.title::before{
+  content: "\0261B";
+  margin-right: 1rem;
+  font-size: 3rem;
+  background-color: #FCCA46;
+  width: 4ch;
+  text-align: center;
+}
+
+.title::after{
+  content: "\0261A";
+  margin-left: 1rem;
+  font-size: 3rem;
+  background-color: #FCCA46;
+  width: 4ch;
+  text-align: center;
+}
+
+li {
+  line-height: 2;
+}
+
+li.done::after{
+  content: "\02713";
+  margin-left: 1rem;
+  color: green;
+}
