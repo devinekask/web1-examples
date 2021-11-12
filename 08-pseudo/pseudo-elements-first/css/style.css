@@ -1,0 +1,24 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+body{
+  font-family: Helvetica, Arital, sans-serif;
+  font-size: 1.2rem;
+}
+
+p {max-width: 60ch;}
+
+p::first-letter{
+  color: #FE7F2D;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+p::first-line{
+  font-weight: bold;
+}
