@@ -1,0 +1,24 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+body{
+  font-family: Helvetica, Arital, sans-serif;
+  font-size: 2rem;
+}
+
+li:first-child{
+  color: #FE7F2D;
+}
+
+li:last-child{
+  color: #619B8A;
+}
+
+li:nth-child(2){
+  color: #FCCA46;
+}
