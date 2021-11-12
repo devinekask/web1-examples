@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Inter var';
+    src: url(../assets/fonts/Inter.var.woff2) format('woff2-variations');
+}
+
+body {
+  padding: 1.5em;
+  font-size: 1.25rem;
+  font-family: "Inter var", sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+p {
+  margin-bottom: 1rem;
+}
+
+h1, 
+h2,
+h3 {
+  font-variation-settings: 'wght' 600;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-feature-settings: "cpsp";
+}
+
+* + h2 {
+  margin-top: 2rem;
+}
+
+.salt {
+  font-feature-settings: "salt";
+}
+
+.ss01 {
+  font-feature-settings: "ss01";
+}
+
+.ss02 {
+  font-feature-settings: "ss02";
+}
+
+.zero {
+  font-feature-settings: "zero";
+}
+
+.cv06 {
+  font-feature-settings: "cv06";
+}
+
+.cv11 {
+  font-feature-settings: "cv11";
+}
+
+.tnum {
+  font-feature-settings: "tnum";
+}
+
+.multiple-features {
+  font-feature-settings: "zero", "ss01", "cv11" ;
+}
+
