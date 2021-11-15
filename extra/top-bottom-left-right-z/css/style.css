@@ -1,0 +1,91 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --charcoal: #233d4dff;
+  --pumpkin: #fe7f2dff;
+  --sunglow: #fcca46ff;
+  --olivine: #a1c181ff;
+  --polished-pine: #619b8aff;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: monospace;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.box {
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  background-color: var(--charcoal);
+
+  display: grid;
+  place-items: center;
+}
+
+
+.right {
+  right: 10%
+}
+
+.left {
+  left: 10%
+}
+
+.top {
+  top: 10%
+}
+
+.bottom {
+  bottom: 10%
+}
+
+.fiftyfifty {
+  top: 50%;
+  left: 50%;
+}
+
+.stack {
+  position: absolute;
+  width: 10%;
+  height: 10%;
+
+  background-color: var(--pumpkin);
+  border: solid var(--charcoal) .2rem;
+}
+
+div:nth-last-of-type(1) {
+  /* move item to the back, display order is != visual order*/ 
+  z-index: -1;
+  bottom: 10%;
+  right: 10%;
+}
+div:nth-last-of-type(2) {
+  bottom: 12%;
+  right: 12%;
+}
+div:nth-last-of-type(3) {
+  /* move item to the front, display order is != visual order*/ 
+  z-index: 1;
+  bottom: 14%;
+  right: 14%;
+}
+div:nth-last-of-type(4) {
+  bottom: 16%;
+  right: 16%;
+}
+div:nth-last-of-type(5) {
+  bottom: 18%;
+  right: 18%;
+}
