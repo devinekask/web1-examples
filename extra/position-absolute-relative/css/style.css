@@ -1,0 +1,59 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --charcoal: #233d4dff;
+  --pumpkin: #fe7f2dff;
+  --sunglow: #fcca46ff;
+  --olivine: #a1c181ff;
+  --polished-pine: #619b8aff;
+}
+
+html, body {
+  height: 100%;
+}
+
+pre {
+  margin: 0;
+  padding: .1rem;
+  background-color: white;
+}
+
+.parent {
+  position:relative;
+  top: 10rem;
+
+  height: 50%;
+  width: 50%;
+  
+  padding: 1rem;
+  background-color: var(--charcoal);
+}
+
+.child {
+  position: absolute;
+  top: 10%;
+  right: 10rem;
+  
+  height: 10rem;
+  width: 10rem;
+
+  padding: 1rem;
+  background-color: var(--pumpkin);
+}
+
+.default {
+  position: absolute;
+  top: 10%;
+  right: 10rem;
+  
+  height: 10rem;
+  width: 10rem;
+
+  padding: 1rem;
+  background-color: var(--sunglow);
+}
