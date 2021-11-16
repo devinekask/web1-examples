@@ -1,0 +1,28 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --charcoal: #233d4dff;
+  --pumpkin: #fe7f2dff;
+  --sunglow: #fcca46ff;
+  --olivine: #a1c181ff;
+  --polished-pine: #619b8aff;
+}
+
+html, body {
+  height: 100%;
+}
+
+.box{
+  background-color: var(--pumpkin);
+  width: 20rem;
+  height: 20rem;
+  /* change the pivot point and check the difference */
+  /*transform-origin: 0 0;*/
+  /*transform-origin: 100% 100%;*/
+  transform: rotate(45deg);
+}
