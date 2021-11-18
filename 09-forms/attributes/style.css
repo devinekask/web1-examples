@@ -1,0 +1,15 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+div {
+  display: grid;
+  grid-template-columns: 30ch auto;
+  justify-content: start;
+  align-items: baseline;
+  margin: 1rem
+}

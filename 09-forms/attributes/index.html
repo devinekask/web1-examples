@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Datalist</title>
+</head>
+
+<body>
+  <form action="index.html" method="get">
+    <fieldset>
+      <legend>Overview of attributes</legend>
+      <div>
+        <label for="first">Autofocus and size</label>
+        <input id="first" type="text" size="4" autofocus>
+      </div>
+      <div>
+        <label for="second">Required and placeholder</label>
+        <input id="second" type="email" required placeholder="john.doe@gmail.com">
+      </div>
+      <div>
+        <label for="multiple">Show multiple options</label>
+        <select name="multiple" id="multiple" size="4">
+          <option value="test">test</option>
+          <option value="test">test</option>
+          <option value="test">test</option>
+          <option value="test">test</option>
+          <option value="test">test</option>
+          <option value="test">test</option>
+          <option value="test">test</option>
+          <option value="test">test</option>
+        </select>
+      </div>
+      <div>
+        <label for="derde">maxlength</label>
+        <input id="third" type="text" maxlength="6">
+      </div>
+      <div>
+        <label for="fourth">readonly</label>
+        <input id="fourth" type="text" readonly>
+      </div>
+      <div>
+        <label for="fifth">disabled</label>
+        <input id="fifth" type="text" disabled>
+      </div>
+      <div>
+        <label for="sixt">autocomplete (name)</label>
+        <input id="sixt" type="text" autocomplete="name">
+      </div>
+      <div>
+        <span>Submit button</span>
+        <input type="submit">
+      </div>
+    </fieldset>
+  </form>
+</body>
+
+</html>
