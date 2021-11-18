@@ -1,0 +1,40 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+input{
+  margin: 1rem;
+  padding: 0.4rem;
+}
+
+input:required{
+  background-color: azure;
+}
+
+input:valid{
+  background-color: green;
+  color: white;
+}
+
+/* input:invalid{
+  background-color: red;
+  color: white;
+} */
+
+input:user-invalid{
+  background-color: orange;
+  color: white;
+}
+
+input:focus{
+  outline: 1rem solid yellow;
+}
+
+input:checked + label{
+  font-weight: bold;
+  color: lightblue;
+}
