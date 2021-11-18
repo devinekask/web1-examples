@@ -1,0 +1,17 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+input{
+  margin: 1rem;
+}
+
+div {
+  display: grid;
+  grid-template-columns: 10ch auto;
+  justify-content: start;
+  align-items: baseline;
+}
