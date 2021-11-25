@@ -1,0 +1,49 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+:root {
+  --charcoal: #233d4dff;
+  --pumpkin: #fe7f2dff;
+  --sunglow: #fcca46ff;
+  --olivine: #a1c181ff;
+  --polished-pine: #619b8aff;
+}
+
+.one {
+  background: var(--pumpkin);
+  animation-name: move;
+  animation-duration: 1s;
+}
+
+.two {
+  background: var(--charcoal);
+  animation-name: rotate;
+  animation-duration: 3s;
+}
+
+@keyframes move {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(200%, 0);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.box {
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 1rem
+}
