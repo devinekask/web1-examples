@@ -1,0 +1,52 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --charcoal: #233d4dff;
+  --pumpkin: #fe7f2dff;
+  --sunglow: #fcca46ff;
+  --olivine: #a1c181ff;
+  --polished-pine: #619b8aff;
+}
+
+.menu__bar{
+  display: flex;
+  margin: 3rem;
+}
+
+.menu__item{
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 1rem 3rem;
+  text-decoration: none;
+  color: white;
+  background-color: var(--charcoal);
+  margin-right: 1rem;
+   /* set transition on both the background-color and the color */
+   transition: background-color 2s ease-out, color 1s ease-out;
+  
+   /* Set transition on all properties: also the font-size for the active state*/
+   /* transition: all 2s ease-out; */
+}
+
+.menu__item:link{
+  background-color: var(--pumpkin);
+}
+
+.menu__item:visited{
+  background-color: var(--olivine);
+}
+
+.menu__item:hover{
+  background-color: var(--polished-pine);
+  /* notice that there is no transition for the color, only for the background-color */ 
+  color: black;
+}
+
+.menu__item:active{
+  font-size: 2rem;
+}
