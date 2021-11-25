@@ -1,0 +1,57 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+:root {
+  --charcoal: #233d4dff;
+  --pumpkin: #fe7f2dff;
+  --sunglow: #fcca46ff;
+  --olivine: #a1c181ff;
+  --polished-pine: #619b8aff;
+}
+
+.one {
+  background: var(--pumpkin);
+  animation-name: move;
+}
+
+.two {
+  background: var(--charcoal);
+  animation-name: rotate;
+}
+
+@keyframes move {
+  from {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(200%, 20%);
+  }
+  to {
+    transform: translate(100%, 0);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    background-color: var(--sunglow);
+    transform: rotate(1turn) translate(0,50%);
+    border-radius: 50%;
+  }
+}
+
+.box {
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 1rem;
+
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
