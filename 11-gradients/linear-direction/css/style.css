@@ -1,0 +1,24 @@
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body, html {
+  height: 100%;
+}
+
+:root {
+  --charcoal: #233d4dff;
+  --pumpkin: #fe7f2dff;
+  --sunglow: #fcca46ff;
+  --olivine: #a1c181ff;
+  --polished-pine: #619b8aff;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, var(--sunglow), var(--pumpkin));
+  /* background-image: linear-gradient(.9turn, var(--sunglow), var(--pumpkin)); */
+  /* background-image: linear-gradient(30deg, var(--sunglow), var(--pumpkin)); */
+}
