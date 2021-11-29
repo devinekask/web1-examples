@@ -1,0 +1,22 @@
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body, html {
+  height: 100%;
+}
+
+:root {
+  --charcoal: #233d4dff;
+  --pumpkin: #fe7f2dff;
+  --sunglow: #fcca46ff;
+  --olivine: #a1c181ff;
+  --polished-pine: #619b8aff;
+}
+
+body {
+  background-image: repeating-radial-gradient(circle at 25% 75%,  var(--sunglow), var(--sunglow) 5%, var(--pumpkin) 5%, var(--pumpkin) 15%,  var(--sunglow) 16%, var(--sunglow) 17%,  var(--pumpkin) 18%, var(--pumpkin) 20%);
+}
