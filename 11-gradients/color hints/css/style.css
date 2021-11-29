@@ -1,0 +1,46 @@
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body, html {
+  height: 100%;
+}
+
+:root {
+  --charcoal: #233d4dff;
+  --pumpkin: #fe7f2dff;
+  --sunglow: #fcca46ff;
+  --olivine: #a1c181ff;
+  --polished-pine: #619b8aff;
+}
+
+body {
+  display: grid;
+}
+
+div:nth-child(1) {
+  /* default */
+  background-image: linear-gradient(to right, var(--sunglow), var(--pumpkin));
+}
+div:nth-child(2) {
+  /* at 80%, gradient starts */
+  background-image: linear-gradient(to right, var(--sunglow) 80%, var(--pumpkin));
+}
+div:nth-child(3) {
+  /* this one starts at 25% and ends at 50% Full colors before and after that point */
+  background-image: linear-gradient(to right, var(--sunglow) 25%,  var(--pumpkin) 50%);
+}
+div:nth-child(4) {
+  /* this is the same as the default */
+  background-image: linear-gradient(to right, var(--sunglow), 50%,  var(--pumpkin));
+}
+div:nth-child(5) {
+  /* We can set the center of the gradient at 25% */
+  background-image: linear-gradient(to right, var(--sunglow), 25%,  var(--pumpkin));
+}
+
+
+
