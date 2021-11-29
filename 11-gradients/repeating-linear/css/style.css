@@ -1,0 +1,45 @@
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body, html {
+  height: 100%;
+}
+
+:root {
+  --charcoal: #233d4dff;
+  --pumpkin: #fe7f2dff;
+  --sunglow: #fcca46ff;
+  --olivine: #a1c181ff;
+  --polished-pine: #619b8aff;
+}
+
+body {
+  display: grid;
+}
+
+div:nth-child(1) {
+  /* no difference between repeating or not */
+  background-image: repeating-linear-gradient(to right, var(--sunglow), var(--pumpkin));
+}
+div:nth-child(2) {
+  /* 50% is half the width, so it repeats 2 times */
+  background-image: repeating-linear-gradient(to right, var(--sunglow), var(--pumpkin) 50%);
+}
+div:nth-child(3) {
+  /* Every gradient is 5rem wide */
+  background-image: repeating-linear-gradient(to right, var(--sunglow), var(--pumpkin) 5rem);
+}
+div:nth-child(4) {
+  background-image: repeating-linear-gradient(to right, var(--sunglow), var(--sunglow) 5%, var(--pumpkin) 10%);
+}
+div:nth-child(5) {
+  /* repeating hard stops with an angle */
+  background-image: repeating-linear-gradient(45deg, var(--sunglow), var(--sunglow) 2rem,  var(--pumpkin) 2rem, var(--pumpkin) 4rem);
+}
+
+
+
