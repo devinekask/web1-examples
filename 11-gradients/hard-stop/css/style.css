@@ -1,0 +1,42 @@
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body, html {
+  height: 100%;
+}
+
+:root {
+  --charcoal: #233d4dff;
+  --pumpkin: #fe7f2dff;
+  --sunglow: #fcca46ff;
+  --olivine: #a1c181ff;
+  --polished-pine: #619b8aff;
+}
+
+body {
+  display: grid;
+}
+
+div:nth-child(1) {
+  /* almost the same */
+  background-image: linear-gradient(to right, var(--sunglow) 48%, var(--pumpkin) 52%);
+}
+div:nth-child(2) {
+  /* same value, hard stop */
+  background-image: linear-gradient(to right, var(--sunglow) 50%, var(--pumpkin) 50%);
+}
+div:nth-child(3) {
+  /* easier notation with 0 */
+  background-image: linear-gradient(to right, var(--pumpkin) 50%, var(--sunglow) 0);
+}
+div:nth-child(4) {
+  /* more colors */
+  background-image: linear-gradient(to right, var(--sunglow) 25%,  var(--pumpkin) 0%, var(--pumpkin) 50%, var(--olivine) 0%, var(--olivine) 75%, var(--polished-pine) 0);
+}
+
+
+
