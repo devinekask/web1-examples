@@ -1,0 +1,32 @@
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body, html {
+  height: 100%;
+}
+
+:root {
+  --charcoal: #233d4dff;
+  --pumpkin: #fe7f2dff;
+  --sunglow: #fcca46ff;
+  --olivine: #a1c181ff;
+  --polished-pine: #619b8aff;
+}
+
+body {
+  display: flex;
+}
+
+div:nth-child(1) {
+  flex: 1;
+  background-image: radial-gradient(var(--sunglow), var(--pumpkin));
+}
+
+div:nth-child(2) {
+  flex: 1;
+  background-image: radial-gradient( circle closest-side,var(--sunglow), var(--pumpkin));
+}
