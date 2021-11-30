@@ -19,7 +19,7 @@ body, html {
 
 body {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
 
@@ -32,11 +32,22 @@ div:nth-child(2){
 }
 
 div:nth-child(3){
-  background-image: conic-gradient(var(--pumpkin) .5turn, var(--sunglow) 0);
+  background-image: conic-gradient(var(--charcoal), var(--charcoal) 10%,  var(--pumpkin) 0,  var(--pumpkin) 30%, var(--sunglow) 0, var(--sunglow) 35%, var(--olivine) 0, var(--olivine) 66%, var(--polished-pine) 0);
 }
 
 div:nth-child(4){
+  background-image: conic-gradient(var(--pumpkin) .5turn, var(--sunglow) 0);
+}
+
+div:nth-child(5){
   background-image: conic-gradient(var(--charcoal) .25turn, var(--sunglow) 0, var(--sunglow) .5turn, var(--charcoal) .5turn, var(--charcoal) .75turn, var(--sunglow) 0);
 }
+
+div:nth-child(6){
+  background-image: repeating-conic-gradient(var(--sunglow), var(--pumpkin), var(--sunglow) 20%);
+}
+
+
+
 
 
