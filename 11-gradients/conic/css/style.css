@@ -1,0 +1,42 @@
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body, html {
+  height: 100%;
+}
+
+:root {
+  --charcoal: #233d4dff;
+  --pumpkin: #fe7f2dff;
+  --sunglow: #fcca46ff;
+  --olivine: #a1c181ff;
+  --polished-pine: #619b8aff;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+div:nth-child(1){
+  background-image: conic-gradient(var(--sunglow), var(--pumpkin));
+}
+
+div:nth-child(2){
+  background-image: conic-gradient(red, yellow, green, blue, purple, red);
+}
+
+div:nth-child(3){
+  background-image: conic-gradient(var(--pumpkin) .5turn, var(--sunglow) 0);
+}
+
+div:nth-child(4){
+  background-image: conic-gradient(var(--charcoal) .25turn, var(--sunglow) 0, var(--sunglow) .5turn, var(--charcoal) .5turn, var(--charcoal) .75turn, var(--sunglow) 0);
+}
+
+
