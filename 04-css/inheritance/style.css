@@ -1,9 +1,9 @@
 p {
   color: #233D4D;
-  background-color: #FCCA46;
   font-size: 2rem;
 
   /* notice child elements don't inherit the following */
+  background-color: #FCCA46;
   padding: 3rem;
   border: solid .4rem #A1C181;
 }
