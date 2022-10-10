@@ -2,21 +2,17 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-.menu{
-  display:flex;
+.menu {
+  display: flex;
 }
 
-.menu__item{
-  font-size: 2rem;
-  margin: 1rem;
+.menu__item {
   padding: 1rem;
   background-color: lightgray;
-}
-
-.menu__item--first{
-  margin-left: 3rem;
 }

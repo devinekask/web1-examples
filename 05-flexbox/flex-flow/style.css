@@ -2,18 +2,23 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-.container{
+.container {
   display: flex;
-  flex-flow: row;
-  /*flex-flow: column-reverse nowrap;*/
+  flex-flow: row-reverse wrap;
+  /* =
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  */
+  /* try flex-flow: column-reverse nowrap; */
 }
 
-.container__item{
-  margin: 3rem;
+.container__item {
   padding: 1rem;
   background-color: silver;
 }
