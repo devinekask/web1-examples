@@ -7,36 +7,40 @@
   wght
   */
 
-@font-face{
+@font-face {
   font-family: "Fraunces";
-  src: url('../assets/fonts/fraunces/Fraunces-Variable.ttf') format('truetype');
-
+  src: url('../assets/fonts/fraunces/Fraunces-Variable.woff2') format('woff2-variations');
 }
 
+@font-face {
+  font-family: "Fraunces";
+  src: url('../assets/fonts/fraunces/Fraunces-Italic-Variable.woff2') format('woff2-variations');
+  font-style: italic;
+}
 
 body {
   font-family: Fraunces, sans-serif;
+  font-size: 125%;
+  margin: 1rem 1.5rem;
 }
 
 em {
-  /* note that the italic version is browser-generated here*/
   font-style: italic;
 }
 
 strong {
-  font-variation-settings: 'wght' 100;
+  font-variation-settings: 'wght' 800, 'SOFT' 100;
 }
 
 
 h1 {
-  font-variation-settings: 'wght' 700, 'SOFT' 100;
+  font-variation-settings: 'wght' 800, 'opsz' 100;
 }
 
 .author {
   font-style: italic;
 }
 
-.name {  
-  font-weight: 700;
-  font-variation-settings: 'wght' 800, 'opsz' 100;
+.author__name {
+  font-variation-settings: 'wght' 800, 'SOFT' 100;
 }
