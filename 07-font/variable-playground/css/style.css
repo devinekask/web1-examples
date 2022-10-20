@@ -42,12 +42,15 @@ body {
 }
 
 h2 {
-  /* font-weight: bold; */
   font-variation-settings: "wght" 800, "SOFT" 100;
 }
 
 em {
   font-style: italic;
+}
+
+a:any-link {
+  color: inherit;
 }
 
 input[type="range"] {
@@ -113,14 +116,12 @@ input[type="range"]::-moz-range-thumb {
   gap: 2rem;
   background-color: whitesmoke;
   padding: 1.5rem;
-  /* font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
 }
 
 .slider {
   display: flex;
   flex-direction: column;
   width: 100%;
-  /* flex-basis: 100%; */
 }
 
 .slider__label {

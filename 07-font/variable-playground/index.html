@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <p class="target">Honk for <em>Wonky</em> fonts</p>
+  <p contenteditable="true" class="target">Honk for <em>Wonky</em> fonts</p>
   <aside class="sliders">
     <h2>
       Font variation settings
@@ -53,39 +53,24 @@
              class="slider__input"
              id="size-input">
     </p>
+    <p>
+      Font in use: <a href="https://fraunces.undercase.xyz/">Fraunces</a>
+    </p>
   </aside>
 
   <script>
-    const wghtInput = document.querySelector('#wght-input');
-    const wghtOutput = document.querySelector('#wght-output');
-    const softInput = document.querySelector('#soft-input');
-    const softOutput = document.querySelector('#soft-output');
-    const wonkInput = document.querySelector('#wonk-input');
-    const wonkOutput = document.querySelector('#wonk-output');
-    const opszInput = document.querySelector('#opsz-input');
-    const opszOutput = document.querySelector('#opsz-output');
+
     const target = document.querySelector('.target');
-    const sizeInput = document.querySelector('#size-input');
-    const sizeOutput = document.querySelector('#size-output');
-
-    // set the custom properties to the initial values of the sliders
-    target.style.setProperty('--wght', wghtInput.value);
-    target.style.setProperty('--soft', softInput.value);
-    target.style.setProperty('--wonk', wonkInput.value);
-    target.style.setProperty('--opsz', opszInput.value);
-    target.style.setProperty('--size', sizeInput.value);
-    // set the output values to the initial values of the sliders
-    wghtOutput.value = wghtInput.value;
-    softOutput.value = softInput.value;
-    wonkOutput.value = wonkInput.value;
-    opszOutput.value = opszInput.value;
-    sizeOutput.value = sizeInput.value;
-
-    // simplify the code so that we don't have to repeat the same code for each slider
     const sliders = document.querySelectorAll('.slider');
+
     sliders.forEach(slider => {
       const input = slider.querySelector('.slider__input');
       const output = slider.querySelector('.slider__output');
+      // set the custom properties to the initial values of the sliders
+      target.style.setProperty(`--${input.id.slice(0, -6)}`, input.value);
+      // set the output values to the initial values of the sliders
+      output.value = input.value;
+
       input.addEventListener('input', () => {
         target.style.setProperty(`--${input.id.slice(0, -6)}`, input.value);
         output.value = input.value;
