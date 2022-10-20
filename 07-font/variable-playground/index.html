@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>font-face</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <p class="target">Honk for <em>Wonky</em> fonts</p>
+  <aside class="sliders">
+    <h2>
+      Font variation settings
+    </h2>
+    <p class="slider">
+      <label class="slider__label" for="wght-input">wght (Weight) <output
+                class="slider__output"
+                id="wght-output">100</output></label>
+      <input type="range" min="100" max="900" value="700" class="slider__input"
+             id="wght-input">
+    </p>
+    <p class="slider">
+      <label class="slider__label" for="soft-input">SOFT (Softness) <output
+                class="slider__output"
+                id="soft-output">0</output></label>
+      <input type="range" min="0" max="100" value="0" class="slider__input"
+             id="soft-input">
+    </p>
+    <p class="slider">
+      <label class="slider__label" for="wonk-input">WONK (Wonkiness) <output
+                class="slider__output"
+                id="wonk-output">1</output></label>
+      <input type="range" min="0" max="1" value="1" class="slider__input"
+             id="wonk-input">
+    </p>
+    <p class="slider">
+      <label class="slider__label" for="opsz-input">opsz (Optical Size) <output
+                class="slider__output"
+                id="opsz-output">10</output></label>
+      <input type="range" min="10" max="120" value="60" class="slider__input"
+             id="opsz-input">
+    </p>
+    <p class="slider">
+      <label class="slider__label" for="size-input">
+        font-size
+        <output class="slider__output" id="size-output">60</output>
+      </label>
+      <input type="range" min="16" max="160" value="160" step="1"
+             class="slider__input"
+             id="size-input">
+    </p>
+  </aside>
+
+  <script>
+    const wghtInput = document.querySelector('#wght-input');
+    const wghtOutput = document.querySelector('#wght-output');
+    const softInput = document.querySelector('#soft-input');
+    const softOutput = document.querySelector('#soft-output');
+    const wonkInput = document.querySelector('#wonk-input');
+    const wonkOutput = document.querySelector('#wonk-output');
+    const opszInput = document.querySelector('#opsz-input');
+    const opszOutput = document.querySelector('#opsz-output');
+    const target = document.querySelector('.target');
+    const sizeInput = document.querySelector('#size-input');
+    const sizeOutput = document.querySelector('#size-output');
+
+    // set the custom properties to the initial values of the sliders
+    target.style.setProperty('--wght', wghtInput.value);
+    target.style.setProperty('--soft', softInput.value);
+    target.style.setProperty('--wonk', wonkInput.value);
+    target.style.setProperty('--opsz', opszInput.value);
+    target.style.setProperty('--size', sizeInput.value);
+    // set the output values to the initial values of the sliders
+    wghtOutput.value = wghtInput.value;
+    softOutput.value = softInput.value;
+    wonkOutput.value = wonkInput.value;
+    opszOutput.value = opszInput.value;
+    sizeOutput.value = sizeInput.value;
+
+    // simplify the code so that we don't have to repeat the same code for each slider
+    const sliders = document.querySelectorAll('.slider');
+    sliders.forEach(slider => {
+      const input = slider.querySelector('.slider__input');
+      const output = slider.querySelector('.slider__output');
+      input.addEventListener('input', () => {
+        target.style.setProperty(`--${input.id.slice(0, -6)}`, input.value);
+        output.value = input.value;
+      });
+    });
+
+  </script>
+
+</body>
+
+</html>

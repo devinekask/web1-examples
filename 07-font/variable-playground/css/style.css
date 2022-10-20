@@ -1,0 +1,129 @@
+/* font source: https://fonts.google.com/specimen/Fraunces*/
+
+/*
+  SOFT
+  WONK
+  opsz
+  wght
+  */
+
+@font-face {
+  font-family: "Fraunces";
+  src: url('../assets/fonts/fraunces/Fraunces-Variable.woff2') format('woff2-variations');
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url('../assets/fonts/fraunces/Fraunces-Italic-Variable.woff2') format('woff2-variations');
+  font-style: italic;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Fraunces, sans-serif;
+  /* anti-aliasing */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* font-size: 125%; */
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+  display: grid;
+  /* grid-template-rows: 1fr auto; */
+  grid-template-columns: 1fr 300px;
+}
+
+h2 {
+  /* font-weight: bold; */
+  font-variation-settings: "wght" 800, "SOFT" 100;
+}
+
+em {
+  font-style: italic;
+}
+
+input[type="range"] {
+  --track-height: 8px;
+  --track-bgcolor: gainsboro;
+  --thumb-size: 14px;
+  --thumb-bgcolor: gray;
+  --thumb-border-width: 2px;
+  --thumb-border-color: whitesmoke;
+  -webkit-appearance: none;
+  margin: 1rem 0;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background: gainsboro;
+  height: var(--track-height);
+  border-radius: 9999px;
+}
+
+input[type="range"]::-moz-range-track {
+  background: gainsboro;
+  height: var(--track-height);
+  border-radius: 9999px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: var(--thumb-size);
+  width: var(--thumb-size);
+  background: var(--thumb-bgcolor);
+  border: var(--thumb-border-width) solid var(--thumb-border-color);
+  /* margin-top: calc(var(--thumb-size) / -2 + var(--thumb-border-width) / 2); */
+  margin-top: calc(var(--thumb-size) / -2 + var(--track-height) / 2);
+  border-radius: 50%;
+}
+
+input[type="range"]::-moz-range-thumb {
+  height: var(--thumb-size);
+  width: var(--thumb-size);
+  background: var(--thumb-bgcolor);
+  border: var(--thumb-border-width) solid var(--thumb-border-color);
+  margin-top: calc(var(--thumb-size) / -2);
+  border-radius: 50%;
+}
+
+.target {
+  --wght: 100;
+  --wonk: 0;
+  --opsz: 10;
+  --soft: 0;
+  align-self: center;
+  font-size: calc(var(--size, 1) * 1px);
+  text-align: center;
+  max-width: min-content;
+  margin: 0 auto;
+  line-height: .9;
+  font-variation-settings: 'wght' var(--wght), 'opsz' var(--opsz), 'SOFT' var(--soft), 'WONK' var(--wonk);
+}
+
+.sliders {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: whitesmoke;
+  padding: 1.5rem;
+  /* font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* flex-basis: 100%; */
+}
+
+.slider__label {
+  display: flex;
+  justify-content: space-between;
+}
