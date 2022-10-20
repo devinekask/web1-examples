@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Inter var';
-    src: url(../assets/fonts/Inter.var.woff2) format('woff2-variations');
+  font-family: "Inter var";
+  src: url("../assets/fonts/Inter.var.woff2") format("woff2-variations");
 }
 
 body {
@@ -16,7 +16,7 @@ p {
   margin-bottom: 1rem;
 }
 
-h1, 
+h1,
 h2,
 h3 {
   font-variation-settings: 'wght' 600;
@@ -27,7 +27,7 @@ h1 {
   font-feature-settings: "cpsp";
 }
 
-* + h2 {
+*+h2 {
   margin-top: 2rem;
 }
 
@@ -60,6 +60,5 @@ h1 {
 }
 
 .multiple-features {
-  font-feature-settings: "zero", "ss01", "cv11" ;
+  font-feature-settings: "zero", "ss01", "cv11";
 }
-
