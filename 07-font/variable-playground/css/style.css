@@ -104,17 +104,13 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .target {
-  --wght: 100;
-  --wonk: 0;
-  --opsz: 10;
-  --soft: 0;
   color: darkorange;
   align-self: center;
   font-size: calc(var(--size, 1) * 1px);
   text-align: center;
   max-width: min-content;
   margin: 0 auto;
-  line-height: .9;
+  line-height: var(--line-height);
   font-variation-settings: 'wght' var(--wght), 'opsz' var(--opsz), 'SOFT' var(--soft), 'WONK' var(--wonk);
 }
 
