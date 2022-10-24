@@ -10,9 +10,13 @@ html {
 }
 
 html {
+  /*
+  This sets the default font-family + size  and the default line-height.
+  These properties are inherited by all elements except elements that override them.
+  */
+  font-family: sans-serif;
   font-size: 125%;
   line-height: 1.5;
-  font-family: sans-serif;
 }
 
 body {
@@ -25,17 +29,29 @@ p {
   margin: 1.5rem 0;
 }
 
+.container {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
 /*
-  Let the content dictate the width of the element
+  Let the content dictate the width and height of the element
 */
 
 .cta {
+  /*
+  sets the element to an inline block element.
+  It's still inline but block properties such as padding work
+  */
   display: inline-block;
+
+  /* add whitespace inside the element */
   padding: 1rem 2rem;
-  text-decoration: none;
+
   background-color: dodgerblue;
   border: 2px solid darkblue;
   color: white;
   font-weight: bold;
+  text-decoration: none;
   border-radius: 0.5rem;
 }
