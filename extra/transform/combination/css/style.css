@@ -1,7 +1,10 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -13,15 +16,19 @@ html {
   --polished-pine: #619b8aff;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
-.box{
+.box {
   background-color: var(--pumpkin);
   width: 20rem;
   height: 20rem;
   /*transform-origin: 0 0;*/
   /*transform-origin: 100% 100%;*/
-  transform: translate(100%, 50%) scale(1.2,1.8) rotate(45deg) ; 
+  /* transform: translate(100%, 50%) rotate(45deg) scale(1.2, 1.8) ; */
+  translate: 100% 50%;
+  scale: 1.2 1.8;
+  rotate: 45deg;
 }
