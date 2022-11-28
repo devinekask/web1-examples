@@ -2,7 +2,10 @@ html {
   box-sizing: border-box;
   height: 100%;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -14,19 +17,29 @@ html {
   --polished-pine: #619b8aff;
 }
 
-body{
+body {
   height: 100%;
   display: grid;
   place-items: center;
 }
 
-.box{
+.box {
   background-color: var(--pumpkin);
   width: 20rem;
   height: 20rem;
-  transition: transform 0.6s ease-out;
+  /* 1. old way */
+  /* transition: transform 0.6s ease-out; */
+
+  /* 2. modern way */
+  transition: all 0.6s ease-out;
+  transition-property: scale, rotate;
 }
 
-.box:hover{
-  transform: scale(2,2) rotate(45deg);
+.box:hover {
+  /* 1. old way */
+  /* transform: scale(2, 2) rotate(45deg); */
+
+  /* 2. modern way */
+  scale: 2;
+  rotate: 45deg;
 }

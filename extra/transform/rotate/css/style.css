@@ -28,6 +28,6 @@ body {
   /* change the pivot point and check the difference */
   /*transform-origin: 0 0;*/
   /*transform-origin: 100% 100%;*/
-  /* transform: rotate(45deg); */
+  transform: rotate(-45deg);
   rotate: 45deg;
 }
