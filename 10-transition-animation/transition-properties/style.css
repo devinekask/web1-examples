@@ -1,9 +1,13 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
+
 :root {
   --charcoal: #233d4dff;
   --pumpkin: #fe7f2dff;
@@ -12,12 +16,12 @@ html {
   --polished-pine: #619b8aff;
 }
 
-.menu__bar{
+.menu__bar {
   display: flex;
   margin: 3rem;
 }
 
-.menu__item{
+.menu__item {
   font-weight: 300;
   text-transform: uppercase;
   padding: 1rem 3rem;
@@ -25,24 +29,24 @@ html {
   color: white;
   background-color: var(--charcoal);
   margin-right: 1rem;
-  /* set a transition for the background that takes 2 seconds */
+  /* set a transition for the background that takes 2 seconds on the original state */
   transition: background-color 2s ease-out;
 }
 
-.menu__item:link{
+.menu__item:link {
   background-color: var(--pumpkin);
 }
 
-.menu__item:visited{
+.menu__item:visited {
   background-color: var(--olivine);
 }
 
-.menu__item:hover{
+.menu__item:hover {
   background-color: var(--polished-pine);
-  /* notice that there is no transition for the color, only for the background-color */ 
+  /* notice that there is no transition for the color, only for the background-color */
   color: black;
 }
 
-.menu__item:active{
+.menu__item:active {
   font-size: 2rem;
 }
