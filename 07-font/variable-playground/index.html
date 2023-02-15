@@ -11,38 +11,31 @@
 </head>
 
 <body>
-  <p contenteditable="true" class="target">A <em>Clockwork</em> Orange</p>
+  <main>
+    <p contenteditable="true" class="target">A <em>Clockwork</em> Orange</p>
+    <div class="css">
+      font-variation-settings: <span class="css__output"> </span>;
+    </div>
+  </main>
   <aside class="sliders">
     <h2>
       Font variation settings
     </h2>
     <p class="slider">
-      <label class="slider__label" for="wght-input">wght (Weight) <output
-                class="slider__output"
-                id="wght-output">100</output></label>
-      <input type="range" min="100" max="900" value="700" class="slider__input"
-             id="wght-input">
+      <label class="slider__label" for="wght-input">wght (Weight) <output class="slider__output" id="wght-output">100</output></label>
+      <input type="range" min="100" max="900" value="700" class="slider__input" id="wght-input">
     </p>
     <p class="slider">
-      <label class="slider__label" for="soft-input">SOFT (Softness) <output
-                class="slider__output"
-                id="soft-output">0</output></label>
-      <input type="range" min="0" max="100" value="0" class="slider__input"
-             id="soft-input">
+      <label class="slider__label" for="soft-input">SOFT (Softness) <output class="slider__output" id="soft-output">0</output></label>
+      <input type="range" min="0" max="100" value="0" class="slider__input" id="soft-input">
     </p>
     <p class="slider">
-      <label class="slider__label" for="wonk-input">WONK (Wonkiness) <output
-                class="slider__output"
-                id="wonk-output">1</output></label>
-      <input type="range" min="0" max="1" value="1" class="slider__input"
-             id="wonk-input">
+      <label class="slider__label" for="wonk-input">WONK (Wonkiness) <output class="slider__output" id="wonk-output">1</output></label>
+      <input type="range" min="0" max="1" value="1" class="slider__input" id="wonk-input">
     </p>
     <p class="slider">
-      <label class="slider__label" for="opsz-input">opsz (Optical Size) <output
-                class="slider__output"
-                id="opsz-output">10</output></label>
-      <input type="range" min="10" max="120" value="60" class="slider__input"
-             id="opsz-input">
+      <label class="slider__label" for="opsz-input">opsz (Optical Size) <output class="slider__output" id="opsz-output">10</output></label>
+      <input type="range" min="10" max="120" value="60" class="slider__input" id="opsz-input">
     </p>
     <h2>Other Settings</h2>
     <p class="slider">
@@ -50,18 +43,14 @@
         font-size
         <output class="slider__output" id="size-output">60</output>
       </label>
-      <input type="range" min="16" max="160" value="160" step="1"
-             class="slider__input"
-             id="size-input">
+      <input type="range" min="16" max="160" value="160" step="1" class="slider__input" id="size-input">
     </p>
     <p class="slider">
       <label class="slider__label" for="line-height-input">
         line-height
         <output class="slider__output" id="line-height-output">60</output>
       </label>
-      <input type="range" min="0.75" max="1.5" value="0.9" step="0.05"
-             class="slider__input"
-             id="line-height-input">
+      <input type="range" min="0.75" max="1.5" value="0.9" step="0.05" class="slider__input" id="line-height-input">
     </p>
     <p>
       Font in use: <a href="https://fraunces.undercase.xyz/">Fraunces</a>
@@ -72,6 +61,7 @@
 
     const target = document.querySelector('.target');
     const sliders = document.querySelectorAll('.slider');
+    const cssOutput = document.querySelector('.css__output');
 
     sliders.forEach(slider => {
       const input = slider.querySelector('.slider__input');
@@ -84,7 +74,28 @@
       input.addEventListener('input', () => {
         target.style.setProperty(`--${input.id.slice(0, -6)}`, input.value);
         output.value = input.value;
+        // update the cssOutput
       });
+    });
+
+    // update the cssOutput to the values of the first four sliders
+    cssOutput.textContent = `"wght" ${document.querySelector('#wght-input').value}, "SOFT" ${document.querySelector('#soft-input').value}, "WONK" ${document.querySelector('#wonk-input').value}, "opsz" ${document.querySelector('#opsz-input').value}`;
+
+    // update the cssOutput when the sliders change
+    document.querySelector('#wght-input').addEventListener('input', () => {
+      cssOutput.textContent = `"wght" ${document.querySelector('#wght-input').value}, "SOFT" ${document.querySelector('#soft-input').value}, "WONK" ${document.querySelector('#wonk-input').value}, "opsz" ${document.querySelector('#opsz-input').value}`;
+    });
+
+    document.querySelector('#soft-input').addEventListener('input', () => {
+      cssOutput.textContent = `"wght" ${document.querySelector('#wght-input').value}, "SOFT" ${document.querySelector('#soft-input').value}, "WONK" ${document.querySelector('#wonk-input').value}, "opsz" ${document.querySelector('#opsz-input').value}`;
+    });
+
+    document.querySelector('#wonk-input').addEventListener('input', () => {
+      cssOutput.textContent = `"wght" ${document.querySelector('#wght-input').value}, "SOFT" ${document.querySelector('#soft-input').value}, "WONK" ${document.querySelector('#wonk-input').value}, "opsz" ${document.querySelector('#opsz-input').value}`;
+    });
+
+    document.querySelector('#opsz-input').addEventListener('input', () => {
+      cssOutput.textContent = `"wght" ${document.querySelector('#wght-input').value}, "SOFT" ${document.querySelector('#soft-input').value}, "WONK" ${document.querySelector('#wonk-input').value}, "opsz" ${document.querySelector('#opsz-input').value}`;
     });
 
   </script>
