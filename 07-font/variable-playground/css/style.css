@@ -10,12 +10,14 @@
 @font-face {
   font-family: "Fraunces";
   src: url('../assets/fonts/fraunces/Fraunces-Variable.woff2') format('woff2-variations');
+  font-weight: 100 900;
 }
 
 @font-face {
   font-family: "Fraunces";
   src: url('../assets/fonts/fraunces/Fraunces-Italic-Variable.woff2') format('woff2-variations');
   font-style: italic;
+  font-weight: 100 900;
 }
 
 * {
@@ -116,7 +118,8 @@ input[type="range"]::-moz-range-thumb {
   max-width: min-content;
   margin: 0 auto;
   line-height: var(--line-height);
-  font-variation-settings: 'wght' var(--wght), 'opsz' var(--opsz), 'SOFT' var(--soft), 'WONK' var(--wonk);
+  font-weight: var(--wght);
+  font-variation-settings: 'opsz' var(--opsz), 'SOFT' var(--soft), 'WONK' var(--wonk);
 }
 
 .sliders {
@@ -149,4 +152,5 @@ input[type="range"]::-moz-range-thumb {
   /* monospace font family stack */
   font-family: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
   padding: 2rem;
+  line-height: 1.5;
 }

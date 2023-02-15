@@ -14,7 +14,8 @@
   <main>
     <p contenteditable="true" class="target">A <em>Clockwork</em> Orange</p>
     <div class="css">
-      font-variation-settings: <span class="css__output"> </span>;
+      font-weight: <span class="css__output-fw"> </span>; <br>
+      font-variation-settings: <span class="css__output-fvs"> </span>;
     </div>
   </main>
   <aside class="sliders">
@@ -35,7 +36,7 @@
     </p>
     <p class="slider">
       <label class="slider__label" for="opsz-input">opsz (Optical Size) <output class="slider__output" id="opsz-output">10</output></label>
-      <input type="range" min="10" max="120" value="60" class="slider__input" id="opsz-input">
+      <input type="range" min="9" max="144" value="60" class="slider__input" id="opsz-input">
     </p>
     <h2>Other Settings</h2>
     <p class="slider">
@@ -61,7 +62,8 @@
 
     const target = document.querySelector('.target');
     const sliders = document.querySelectorAll('.slider');
-    const cssOutput = document.querySelector('.css__output');
+    const cssOutputFw = document.querySelector('.css__output-fw');
+    const cssOutputFvs = document.querySelector('.css__output-fvs');
 
     sliders.forEach(slider => {
       const input = slider.querySelector('.slider__input');
@@ -79,23 +81,24 @@
     });
 
     // update the cssOutput to the values of the first four sliders
-    cssOutput.textContent = `"wght" ${document.querySelector('#wght-input').value}, "SOFT" ${document.querySelector('#soft-input').value}, "WONK" ${document.querySelector('#wonk-input').value}, "opsz" ${document.querySelector('#opsz-input').value}`;
+    cssOutputFw.textContent = `${document.querySelector('#wght-input').value}`;
+    cssOutputFvs.textContent = `"SOFT" ${document.querySelector('#soft-input').value}, "WONK" ${document.querySelector('#wonk-input').value}, "opsz" ${document.querySelector('#opsz-input').value}`;
 
     // update the cssOutput when the sliders change
     document.querySelector('#wght-input').addEventListener('input', () => {
-      cssOutput.textContent = `"wght" ${document.querySelector('#wght-input').value}, "SOFT" ${document.querySelector('#soft-input').value}, "WONK" ${document.querySelector('#wonk-input').value}, "opsz" ${document.querySelector('#opsz-input').value}`;
+      cssOutputFw.textContent = `${document.querySelector('#wght-input').value}`;
     });
 
     document.querySelector('#soft-input').addEventListener('input', () => {
-      cssOutput.textContent = `"wght" ${document.querySelector('#wght-input').value}, "SOFT" ${document.querySelector('#soft-input').value}, "WONK" ${document.querySelector('#wonk-input').value}, "opsz" ${document.querySelector('#opsz-input').value}`;
+      cssOutputFvs.textContent = `"SOFT" ${document.querySelector('#soft-input').value}, "WONK" ${document.querySelector('#wonk-input').value}, "opsz" ${document.querySelector('#opsz-input').value}`;
     });
 
     document.querySelector('#wonk-input').addEventListener('input', () => {
-      cssOutput.textContent = `"wght" ${document.querySelector('#wght-input').value}, "SOFT" ${document.querySelector('#soft-input').value}, "WONK" ${document.querySelector('#wonk-input').value}, "opsz" ${document.querySelector('#opsz-input').value}`;
+      cssOutputFvs.textContent = `"SOFT" ${document.querySelector('#soft-input').value}, "WONK" ${document.querySelector('#wonk-input').value}, "opsz" ${document.querySelector('#opsz-input').value}`;
     });
 
     document.querySelector('#opsz-input').addEventListener('input', () => {
-      cssOutput.textContent = `"wght" ${document.querySelector('#wght-input').value}, "SOFT" ${document.querySelector('#soft-input').value}, "WONK" ${document.querySelector('#wonk-input').value}, "opsz" ${document.querySelector('#opsz-input').value}`;
+      cssOutputFvs.textContent = `"SOFT" ${document.querySelector('#soft-input').value}, "WONK" ${document.querySelector('#wonk-input').value}, "opsz" ${document.querySelector('#opsz-input').value}`;
     });
 
   </script>
