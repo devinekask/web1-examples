@@ -15,7 +15,7 @@ html, body, .container  {
   grid-template-columns: repeat(2, 2rem 5rem) repeat(2, 3rem) auto;
   grid-template-rows: repeat(3, 1fr);
   gap: 3rem 1rem;
-  background-color: #FCCA46;
+  
 }
 
 .child {
