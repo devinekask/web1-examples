@@ -33,11 +33,6 @@ body,
   font-size: 2rem;
 }
 
-.child::nth-child(1) {
-  grid-row-start: 2;
-  grid-column-start: 4;
-}
-
 .child--placed-1 {
   grid-row-start: 3;
   background-color: #FE7F2D;
