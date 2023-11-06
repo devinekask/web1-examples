@@ -2,27 +2,29 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-html, body, .container  {
-  height: 100%;
+html,
+body,
+.container {
+  min-height: 100vh;
 }
 
 .container {
   display: grid;
   grid-template: repeat(5, 1fr) / repeat(4, 1fr);
   gap: 1rem;
-  /*grid-auto-flow: dense column;*/
-  grid-auto-flow: column;
-
+  /*grid-auto-flow: row dense;*/
   max-width: 40rem;
   margin: 0 auto;
   background-color: #233D4D;
 }
 
-.child{
+.child {
   background-color: #A1C181;
   color: #233D4D;
   display: flex;
@@ -31,7 +33,18 @@ html, body, .container  {
   font-size: 2rem;
 }
 
-.child--placed{
-  grid-row: 4;
+.child::nth-child(1) {
+  grid-row-start: 2;
+  grid-column-start: 4;
+}
+
+.child--placed-1 {
+  grid-row-start: 3;
+  background-color: #FE7F2D;
+}
+
+.child--placed-2 {
+  /* grid-row: 4; */
+  grid-column-start: 4;
   background-color: #FE7F2D;
 }
