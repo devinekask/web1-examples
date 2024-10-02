@@ -1,0 +1,28 @@
+html {
+  font-size: 100%;
+}
+
+blockquote {
+  font-style: italic;
+  /* px are ok for borders or box shadows or border-radius */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+
+  /* rem are good for padding and margin */
+  margin: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  font-size: 1.25rem;
+}
+
+.test--2 {
+  width: 50%;
+}
+
+.test p {
+  width: 50%;
+}
+
+.max {
+  max-width: 50rem;
+}
