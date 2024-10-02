@@ -3,6 +3,7 @@ html {
   /* equivalent to 16px */
   font-size: 125%;
   /* equivalent to 20px */
+  line-height: 1.5;
 }
 
 blockquote {
