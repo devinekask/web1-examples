@@ -1,5 +1,8 @@
 html {
   font-size: 100%;
+  /* equivalent to 16px */
+  font-size: 125%;
+  /* equivalent to 20px */
 }
 
 blockquote {
@@ -9,18 +12,26 @@ blockquote {
   border-radius: 5px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 
-  /* rem are good for padding and margin */
-  margin: 1.5rem;
-  padding: 1.25rem 1.5rem;
+  /* rem are good for padding and margin and font-size */
   font-size: 1.25rem;
+  margin: 1.5rem;
+  padding: 1.5rem 1.5rem;
 }
 
-.test--2 {
+.percent--2 {
   width: 50%;
 }
 
-.test p {
+.percent p {
   width: 50%;
+}
+
+.viewport--2 {
+  width: 50vw;
+}
+
+.viewport p {
+  width: 50vw;
 }
 
 .max {

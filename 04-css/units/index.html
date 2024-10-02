@@ -10,24 +10,40 @@
 </head>
 
 <body>
+  <p>
+    By default all standard text will be 16px. But only if the root font-size of 16px hasn't changed.
+  </p>
   <blockquote>
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed non nisi nihil? Tempore debitis quis fugit. Ipsa magnam unde inventore. Ducimus iusto officiis non nostrum eaque vero eligendi vel ut?
+    This blockquote has a font-size of 1.25rem, making it 20px. The padding and margin are also set set to 1.5rem, so 24px. But only if the root font-size of 16px hasn't changed.
   </blockquote>
 
-  <div class="test">
+  <div class="percent">
     <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero reiciendis totam officia laudantium eius nostrum repudiandae est ipsum eveniet aut, accusantium, dolore quos sint, sequi quis tempora recusandae consequuntur architecto?
+      This paragrahp has a width of 50%, making it always 50% wide relative to it's parent. In this case the parent is as wide as the viewport. This is just some text to make the paragraph longer: Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore magni dicta magnam perferendis cum voluptatem necessitatibus molestias saepe nam assumenda! Quis at ut amet repellat debitis perspiciatis quibusdam reprehenderit soluta?
     </p>
   </div>
 
-  <div class="test test--2">
+  <div class="percent percent--2">
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ipsam fuga itaque explicabo sit quas adipisci! In expedita excepturi voluptates quasi id ratione architecto doloribus maiores, quaerat doloremque ut provident.
+      This paragrahp has a width of 50%, making it always 50% wide relative to it's parent. In this case the parent itself is also set to 50%, making the paragraph 50% of 50% of the viewport width wide. This is just some text to make the paragraph longer: Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore magni dicta magnam perferendis cum voluptatem necessitatibus molestias saepe nam assumenda! Quis at ut amet repellat debitis perspiciatis quibusdam reprehenderit soluta?
+    </p>
+  </div>
+
+  <div class="viewport">
+    <p>
+      This paragrahp has a width of 50vw, making it always 50vw wide relative to the viewport. This is just some text to make the paragraph longer: Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore magni dicta magnam perferendis cum voluptatem necessitatibus molestias saepe nam assumenda! Quis at ut amet repellat debitis perspiciatis quibusdam reprehenderit soluta?
+    </p>
+  </div>
+
+  <div class="viewport viewport--2">
+    <p>
+      This paragrahp has a width of 50vw, making it always 50vw wide relative the viewport. In this case the parent itself is also set to 50vw but this has no effect on the paragraph. This is just some text to make the paragraph longer: Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore magni dicta magnam perferendis cum voluptatem necessitatibus molestias saepe nam assumenda! Quis at ut amet repellat debitis perspiciatis quibusdam reprehenderit soluta?
     </p>
   </div>
 
   <div class="max">
     <p>
+      This paragraph has a max-width of 50rem, making it 50 &times; 16px wide maximum. If the parent, in this case the whole page, gets less wide it will shrink with it. This is just some text to make the paragraph longer:
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex omnis sequi, illo alias tenetur cum reprehenderit a, placeat totam, iure molestiae nam nulla eius possimus quae provident. Voluptates, error explicabo.
     </p>
   </div>
