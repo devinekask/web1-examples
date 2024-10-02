@@ -1,19 +1,22 @@
 html {
-  font-size: 100%;
-  /* equivalent to 16px */
-  font-size: 125%;
-  /* equivalent to 20px */
+  /* font-size: 100%; */
+  /* this is equivalent to 16px so no need to declare that */
+
+  /* font-size: 125%; */
+  /* if you want a bigger standard font-size for your whole site. Equivalent to 20px */
+
   line-height: 1.5;
+  /* 1.5 times the font-size */
 }
 
 blockquote {
   font-style: italic;
-  /* px are ok for borders or box shadows or border-radius */
+  /* px is ok for borders or box shadows or border-radius */
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 
-  /* rem are good for padding and margin and font-size */
+  /* rem is good for padding and margin and font-size */
   font-size: 1.25rem;
   margin: 1.5rem;
   padding: 1.5rem 1.5rem;
