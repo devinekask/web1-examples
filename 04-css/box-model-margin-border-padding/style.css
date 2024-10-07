@@ -1,31 +1,18 @@
-:root {
-  --charcoal: #233d4dff;
-  --pumpkin: #fe7f2dff;
-  --sunglow: #fcca46ff;
-  --olivine: #a1c181ff;
-  --polished-pine: #619b8aff;
-
-  --s-2: 0.4rem;
-  --s-1: 0.8rem;
-  --s0: 1rem;
-  --s1: ;
-}
-
 .content {
-  background-color: var(--olivine);
-  border: var(--s-2) dotted var(--charcoal);
+  background-color: #a1c181;
+  border: 0.4rem dotted #233d4d;
 }
 
 .content__title {
-  background-color: var(--sunglow);
-  margin: var(--s0);
-  padding: var(--s-1);
-  border: var(--s-2) solid var(--polished-pine);
+  background-color: #fcca46;
+  margin: 1rem;
+  padding: 0.8rem;
+  border: 0.4rem solid var(--polished-pine);
 }
 
 .inline {
-  background-color: var(--pumpkin);
-  margin: var(--s-1);
-  padding: var(--s0);
-  border: var(--s-1) solid var(--charcoal);
+  background-color: #fe7f2d;
+  margin: 0.8rem;
+  padding: 1rem;
+  border: 0.8rem solid #233d4d;
 }
