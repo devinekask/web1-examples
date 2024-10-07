@@ -1,4 +1,4 @@
-/* 
+/*
 you need to set the height of the html and body to
 100%. Otherwise, the height will be limited to the
 height of the content on the page.
@@ -13,6 +13,13 @@ body {
   background-color: #619b8a;
   font-size: 1rem;
   /* unit can be px, rem, %  */
-  width: 50%; /* 20rem */
-  height: 15rem; /* 50% */
+  width: 50%;
+  /* 20rem */
+  height: 15rem;
+  /* 50% */
+}
+
+.inline {
+  width: 100px;
+  height: 100px;
 }

@@ -22,3 +22,10 @@
   padding: var(--s-1);
   border: var(--s-2) solid var(--polished-pine);
 }
+
+.inline {
+  background-color: var(--pumpkin);
+  margin: var(--s-1);
+  padding: var(--s0);
+  border: var(--s-1) solid var(--charcoal);
+}
