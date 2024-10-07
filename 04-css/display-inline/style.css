@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
@@ -9,10 +10,11 @@ html {
 
 .menu {
   font-size: 2rem;
+  background-color: lightblue;
 }
 
 .menu__item {
   display: inline;
   padding: 1rem;
-  background-color: #a1c181;
+  background-color: palegreen;
 }
