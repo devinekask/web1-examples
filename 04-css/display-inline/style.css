@@ -13,6 +13,8 @@ html {
   background-color: lightblue;
 }
 
+/* don't do this, use flexbox instead */
+
 .menu__item {
   display: inline;
   padding: 1rem;
