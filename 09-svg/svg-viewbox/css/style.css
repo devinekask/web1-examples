@@ -12,4 +12,6 @@ body {
   margin: 0;
   padding: 100px;
   display: flex;
+  gap: 100px;
+  flex-direction: column;
 }
