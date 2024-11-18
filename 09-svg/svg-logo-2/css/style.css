@@ -11,19 +11,12 @@ html {
 
 .logo {
   overflow: visible;
+  fill: yellow;
 }
 
 .logo__path-1 {
   fill: none;
   stroke: yellow;
-  stroke-width: 1;
+  stroke-width: 5;
   stroke-linejoin: round;
-}
-
-.logo__path-2 {
-  fill: yellow;
-}
-
-.logo__path-3 {
-  fill: yellow;
 }
