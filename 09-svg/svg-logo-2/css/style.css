@@ -1,0 +1,29 @@
+html {
+  box-sizing: border-box;
+  background-color: black;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.logo {
+  overflow: visible;
+}
+
+.logo__path-1 {
+  fill: none;
+  stroke: blueviolet;
+  stroke-width: 3;
+  stroke-linejoin: round;
+}
+
+.logo__path-2 {
+  fill: blueviolet;
+}
+
+.logo__path-3 {
+  fill: blueviolet;
+}
