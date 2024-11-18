@@ -16,7 +16,7 @@ html {
 .logo__path-1 {
   fill: none;
   stroke: yellow;
-  stroke-width: 3;
+  stroke-width: 1;
   stroke-linejoin: round;
 }
 
