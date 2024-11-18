@@ -1,3 +1,7 @@
+:root {
+  --acid-yellow: #FFF500;
+}
+
 html {
   box-sizing: border-box;
   background-color: black;
@@ -11,12 +15,12 @@ html {
 
 .logo {
   overflow: visible;
-  fill: yellow;
+  fill: var(--acid-yellow);
 }
 
 .logo__path-1 {
   fill: none;
-  stroke: yellow;
+  stroke: var(--acid-yellow);
   stroke-width: 5;
   stroke-linejoin: round;
 }
