@@ -15,15 +15,15 @@ html {
 
 .logo__path-1 {
   fill: none;
-  stroke: blueviolet;
+  stroke: yellow;
   stroke-width: 3;
   stroke-linejoin: round;
 }
 
 .logo__path-2 {
-  fill: blueviolet;
+  fill: yellow;
 }
 
 .logo__path-3 {
-  fill: blueviolet;
+  fill: yellow;
 }
