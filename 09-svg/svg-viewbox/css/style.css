@@ -11,6 +11,9 @@ html {
 body {
   margin: 0;
   padding: 100px;
+}
+
+.svgs {
   display: flex;
   gap: 100px;
   flex-direction: column;
