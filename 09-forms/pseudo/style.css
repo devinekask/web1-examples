@@ -38,3 +38,9 @@ input:checked + label{
   font-weight: bold;
   color: lightblue;
 }
+
+.options{
+  display: grid;
+  grid-template-columns: min-content max-content;
+  align-items: center;
+}
