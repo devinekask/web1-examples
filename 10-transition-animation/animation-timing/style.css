@@ -1,44 +1,77 @@
 html {
   box-sizing: border-box;
+  font-family: sans-serif;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
+
 :root {
   --charcoal: #233d4dff;
   --pumpkin: #fe7f2dff;
   --sunglow: #fcca46ff;
   --olivine: #a1c181ff;
-  --polished-pine: #619b8aff;
+  --polished-pine: #619b8a;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 2rem;
+}
+
+.box {
+  animation-name: move;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.box-explanation {
+  justify-self: end;
 }
 
 .one {
-  background: var(--pumpkin);
-  animation-name: move;
-  animation-duration: 3s;
+  background: var(--charcoal);
   animation-timing-function: linear;
 }
 
 .two {
-  background: var(--charcoal);
-  animation-name: move;
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
+  background: var(--polished-pine);
+  animation-timing-function: ease-in;
 }
 
 .three {
+  background: var(--olivine);
+  animation-timing-function: ease-out;
+}
+
+.four {
   background: var(--sunglow);
-  animation-name: move;
-  animation-duration: 3s;
-  animation-timing-function: steps(3, start);
+  animation-timing-function: ease-in-out;
+}
+
+.five {
+  background: var(--pumpkin);
+  /* bounce */
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.six {
+  background: var(--charcoal);
+  animation-timing-function: steps(3, end);
 }
 
 @keyframes move {
   from {
     transform: translate(0, 0);
   }
+
   to {
-    transform: translate(200%, 0);
+    transform: translate(200px, 0);
   }
 }
 
