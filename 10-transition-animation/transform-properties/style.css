@@ -26,6 +26,9 @@ body {
   background-color: var(--pumpkin);
   width: 20rem;
   height: 20rem;
+}
+
+.box--transformed {
   scale: 2;
   rotate: 45deg;
   translate: 4rem;
