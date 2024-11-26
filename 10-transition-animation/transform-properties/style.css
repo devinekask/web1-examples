@@ -24,12 +24,12 @@ body {
 
 .box {
   background-color: var(--pumpkin);
-  width: 20rem;
-  height: 20rem;
+  width: 10rem;
+  height: 10rem;
 }
 
 .box--transformed {
-  scale: 2;
+  scale: 1.5;
   rotate: 45deg;
   translate: 4rem;
 }
