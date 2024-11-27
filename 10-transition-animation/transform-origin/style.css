@@ -1,0 +1,36 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --charcoal: #233d4dff;
+  --pumpkin: #fe7f2dff;
+  --sunglow: #fcca46ff;
+  --olivine: #a1c181ff;
+  --polished-pine: #619b8aff;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.box {
+  background-color: var(--pumpkin);
+  width: 10rem;
+  height: 10rem;
+}
+
+.box--transformed {
+  scale: 1.5;
+  rotate: 45deg;
+  transform-origin: 0 0;
+  transform-origin: 100% 100%;
+}
