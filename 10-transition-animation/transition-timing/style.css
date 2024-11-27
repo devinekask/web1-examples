@@ -24,10 +24,16 @@ html {
   gap: 2rem;
 }
 
+.boxes:hover .box {
+  translate: 200px;
+}
+
 .box {
-  animation-name: move;
-  animation-duration: 1.5s;
-  animation-fill-mode: forwards;
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 1rem;
+
+  transition: translate 1.5s;
 }
 
 .box-explanation {
@@ -36,53 +42,36 @@ html {
 
 .one {
   background: var(--charcoal);
-  animation-timing-function: linear;
+  transition-timing-function: linear;
 }
 
 .two {
   background: var(--polished-pine);
-  animation-timing-function: ease;
+  transition-timing-function: ease;
 }
 
 .three {
   background: var(--olivine);
-  animation-timing-function: ease-in;
+  transition-timing-function: ease-in;
 }
 
 .four {
   background: var(--sunglow);
-  animation-timing-function: ease-out;
+  transition-timing-function: ease-out;
 }
 
 .five {
   background: var(--pumpkin);
   /* bounce */
-  animation-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
 
 .six {
   background: var(--charcoal);
-  animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275);
 }
 
 .seven {
   background: var(--polished-pine);
-  animation-timing-function: steps(3, end);
-}
-
-@keyframes move {
-  from {
-    transform: translate(0, 0);
-  }
-
-  to {
-    transform: translate(200px, 0);
-  }
-}
-
-
-.box {
-  width: 5rem;
-  height: 5rem;
-  margin-bottom: 1rem
+  transition-timing-function: steps(3);
 }
