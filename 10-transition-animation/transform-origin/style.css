@@ -31,6 +31,10 @@ body {
 .box--transformed {
   scale: 1.5;
   rotate: 45deg;
+  /* the same */
   transform-origin: 0 0;
+  transform-origin: top left;
+  /* the same */
   transform-origin: 100% 100%;
+  transform-origin: bottom right;
 }
