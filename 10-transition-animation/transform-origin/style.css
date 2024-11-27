@@ -22,10 +22,6 @@ body {
   place-items: center;
 }
 
-a {
-  scale: 1.5
-}
-
 .box {
   background-color: var(--pumpkin);
   width: 10rem;
