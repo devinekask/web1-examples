@@ -1,0 +1,45 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --charcoal: #233d4dff;
+  --pumpkin: #fe7f2dff;
+  --sunglow: #fcca46ff;
+  --olivine: #a1c181ff;
+  --polished-pine: #619b8aff;
+}
+
+body {
+  min-height: 100vh;
+  font-family: monospace;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: grid;
+}
+
+p {
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+}
+
+.one {
+  background-color: var(--charcoal);
+  grid-row: 1;
+  grid-column: 1;
+  /* z-index: 1; */
+}
+
+.two {
+  background-color: var(--pumpkin);
+  grid-row: 1;
+  grid-column: 1;
+}
