@@ -17,7 +17,7 @@ body {
     line-height: 1.5;
     /* Set the default text color */
     color: #333;
-    /* optional: add a background color that fills the whole page */
+    /* Optional: add a background color that fills the whole viewport */
     background-color: #333;
 }
 
@@ -26,7 +26,7 @@ body {
 img {
     max-width: 100%;
     height: auto;
-    /* optional: make them block to avoid extra space */
+    /* Optional: make them block to avoid extra space */
     display: block;
 }
 
