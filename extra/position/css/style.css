@@ -9,11 +9,11 @@ html {
 }
 
 :root {
-  --charcoal: #233d4dff;
-  --pumpkin: #fe7f2dff;
-  --sunglow: #fcca46ff;
-  --olivine: #a1c181ff;
-  --polished-pine: #619b8aff;
+  --charcoal: #233d4dcc;
+  --pumpkin: #fe7f2dcc;
+  --sunglow: #fcca46cc;
+  --olivine: #a1c181cc;
+  --polished-pine: #619b8acc;
 }
 
 body {
@@ -43,19 +43,22 @@ body {
 .two {
   background-color: var(--pumpkin);
   position: relative;
-  /* has effect */
+  /* has effect: */
   top: 2rem;
   left: 2rem;
+  z-index: 1;
 }
 
 .three {
   background-color: var(--sunglow);
   position: absolute;
-  /* has effect */
-  top: 1rem;
-  left: 1rem;
+  /* has effect: */
+  top: 4rem;
+  left: 4rem;
 }
 
 .four {
   background-color: var(--olivine);
+  /* has no effect: */
+  z-index: 2;
 }
