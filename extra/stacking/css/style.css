@@ -17,15 +17,19 @@ html {
 }
 
 body {
-  min-height: 100vh;
   font-family: monospace;
   color: white;
   font-weight: bold;
   font-size: 1.5rem;
-  display: grid;
 }
 
-p {
+.grid {
+  display: grid;
+  min-height: 100vh;
+}
+
+.one,
+.two {
   display: grid;
   place-items: center;
   padding: 1.5rem;
