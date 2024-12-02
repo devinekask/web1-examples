@@ -1,0 +1,108 @@
+:root {
+    /* variables here */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    /* Basic default styling  */
+    font-family: sans-serif;
+    line-height: 1.5;
+    /* Set the default text color unless overwritten */
+    color: #333;
+    /* optional: add a background color that fills the whole page */
+    background-color: #f4f4f4;
+}
+
+/* fluid images */
+
+img {
+    max-width: 100%;
+    height: auto;
+    /* optional: make them block to avoid extra space */
+    display: block;
+}
+
+/* Default typography styling */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+/* Default text link styling. Mix and match but remember the order: (LVHA) */
+
+a:link {
+    color: hotpink;
+}
+
+a:visited {
+    color: crimson;
+}
+
+a:hover {
+    color: deeppink;
+}
+
+a:active {
+    color: blueviolet;
+}
+
+/* Container class to center all elements that are inside in the middle */
+
+.container {
+    /* Make this value as big as you want */
+    max-width: 75rem;
+    /* Center the container */
+    margin: 0 auto;
+}
+
+/* example classes */
+
+.header {
+    background-color: aliceblue;
+    padding: 1.5rem;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav__link:link,
+.nav__link:visited {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+.nav__link:hover {
+    color: darkblue;
+}
+
+.section {
+    padding: 5rem 1.5rem;
+    background-color: azure;
+}
+
+.section--2 {
+    background-color: cornsilk;
+}
+
+.footer {
+    background-color: beige;
+    padding: 1.5rem;
+}
