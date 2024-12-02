@@ -1,0 +1,61 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --charcoal: #233d4dff;
+  --pumpkin: #fe7f2dff;
+  --sunglow: #fcca46ff;
+  --olivine: #a1c181ff;
+  --polished-pine: #619b8aff;
+}
+
+body {
+  font-family: monospace;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.one,
+.two,
+.three,
+.four {
+  display: grid;
+  place-items: center;
+  padding: 3rem;
+}
+
+.one {
+  background-color: var(--charcoal);
+  /* has no effect: */
+  top: 2rem;
+  left: 2rem;
+}
+
+.two {
+  background-color: var(--pumpkin);
+  position: relative;
+  /* has effect */
+  top: 2rem;
+  left: 2rem;
+}
+
+.three {
+  background-color: var(--sunglow);
+  position: absolute;
+  /* has effect */
+  top: 1rem;
+  left: 1rem;
+}
+
+.four {
+  background-color: var(--olivine);
+}
