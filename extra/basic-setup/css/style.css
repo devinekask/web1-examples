@@ -17,14 +17,11 @@ body {
     line-height: 1.5;
     /* Set the default text color */
     color: #333;
-    /* Optional: add a background color that fills the whole viewport */
-    background-color: #333;
 }
 
-/* fluid images and svg */
+/* fluid images */
 
-img,
-svg {
+img {
     max-width: 100%;
     height: auto;
     /* Optional: make them block to avoid extra space */
@@ -62,48 +59,4 @@ h6 {
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
-}
-
-/* Demo example classes */
-
-.header {
-    background-color: aliceblue;
-    padding: 1.5rem;
-}
-
-.header__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.nav__list {
-    display: flex;
-    column-gap: 1.5rem;
-    flex-wrap: wrap;
-}
-
-.nav__link {
-    text-decoration: none;
-    color: cornflowerblue;
-}
-
-.nav__link:hover {
-    color: darkblue;
-}
-
-.main__header {
-    padding: 9rem 1.5rem;
-    background-color: aliceblue;
-}
-
-.main__section {
-    padding: 3rem 1.5rem;
-    background-color: white;
-}
-
-.footer {
-    padding: 1.5rem;
-    color: white
 }
