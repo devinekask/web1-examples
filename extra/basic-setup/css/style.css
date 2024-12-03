@@ -21,9 +21,10 @@ body {
     background-color: #333;
 }
 
-/* fluid images */
+/* fluid images and svg */
 
-img {
+img,
+svg {
     max-width: 100%;
     height: auto;
     /* Optional: make them block to avoid extra space */
@@ -48,6 +49,19 @@ h6 {
     max-width: 75rem;
     /* Center the container */
     margin: 0 auto;
+}
+
+/* visually hidden class */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 
 /* Demo example classes */
