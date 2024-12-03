@@ -17,8 +17,6 @@ body {
     line-height: 1.5;
     /* Set the default text color */
     color: #333;
-    /* Optional: add a background color that fills the whole viewport */
-    background-color: #333;
 }
 
 /* fluid images */
@@ -97,12 +95,26 @@ h6 {
 
 .footer {
     padding: 1.5rem;
-    color: white
+    color: white;
+    background-color: #333;
+}
+
+.sticky {
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+    padding: 1.5rem;
+    position: sticky;
+    top: 0;
+}
+
+.sticky__nav {
+    display: flex;
+    gap: 1.5rem;
 }
 
 .cookie {
     position: fixed;
-    inset: auto 0 0 0;
-    background-color: honeydew;
+    inset: auto 1.5rem 1.5rem auto;
+    background-color: gainsboro;
     padding: 1.5rem;
 }
