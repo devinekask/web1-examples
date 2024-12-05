@@ -36,10 +36,10 @@ html {
 
 @keyframes move {
   from {
-    transform: translate(0, 0);
+    translate: 0  0;
   }
   to {
-    transform: translate(200%, 0);
+    translate: 200% 0;
   }
 }
 

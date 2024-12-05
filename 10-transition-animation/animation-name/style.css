@@ -26,19 +26,19 @@ html {
 
 @keyframes move {
   from {
-    transform: translate(0, 0);
+    translate: 0 0;
   }
   to {
-    transform: translate(200%, 0);
+    translate: 200% 0;
   }
 }
 
 @keyframes rotate {
   from {
-    transform: rotate(0);
+    rotate: 0;
   }
   to {
-    transform: rotate(1turn);
+    rotate: 1turn;
   }
 }
 

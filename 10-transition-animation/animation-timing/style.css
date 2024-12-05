@@ -72,11 +72,11 @@ html {
 
 @keyframes move {
   from {
-    transform: translate(0, 0);
+    translate: 0 0;
   }
 
   to {
-    transform: translate(200px, 0);
+    translate: 200px 0;
   }
 }
 

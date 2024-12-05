@@ -24,23 +24,24 @@ html {
 
 @keyframes move {
   from {
-    transform: translate(0, 0);
+    translate: 0 0;
   }
   50% {
-    transform: translate(200%, 20%);
+    translate: 200% 20%;
   }
   to {
-    transform: translate(100%, 0);
+    translate: 100% 0;
   }
 }
 
 @keyframes rotate {
   from {
-    transform: rotate(0);
+    rotate:0;
   }
   to {
     background-color: var(--sunglow);
-    transform: rotate(1turn) translate(0,50%);
+    rotate:1turn;
+    translate: 0 50%;
     border-radius: 50%;
   }
 }
