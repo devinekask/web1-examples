@@ -20,6 +20,8 @@ body {
 }
 
 .inline {
+  background-color: white;
+  color: #619b8a;
   width: 100px;
   height: 100px;
 }
