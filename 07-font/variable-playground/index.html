@@ -11,53 +11,54 @@
 </head>
 
 <body>
-  <main>
-    <p contenteditable="true" class="target">A <em>Clockwork</em> Orange</p>
-    <div class="css">
-      font-weight: <span class="css__output-fw"> </span>; <br>
-      font-variation-settings: <span class="css__output-fvs"> </span>;
-    </div>
-  </main>
-  <aside class="sliders">
-    <h2>
-      Font variation settings
-    </h2>
-    <p class="slider">
-      <label class="slider__label" for="wght-input">wght (Weight) <output class="slider__output" id="wght-output">100</output></label>
-      <input type="range" min="100" max="900" value="700" class="slider__input" id="wght-input">
-    </p>
-    <p class="slider">
-      <label class="slider__label" for="soft-input">SOFT (Softness) <output class="slider__output" id="soft-output">0</output></label>
-      <input type="range" min="0" max="100" value="0" class="slider__input" id="soft-input">
-    </p>
-    <p class="slider">
-      <label class="slider__label" for="wonk-input">WONK (Wonkiness) <output class="slider__output" id="wonk-output">1</output></label>
-      <input type="range" min="0" max="1" value="1" class="slider__input" id="wonk-input">
-    </p>
-    <p class="slider">
-      <label class="slider__label" for="opsz-input">opsz (Optical Size) <output class="slider__output" id="opsz-output">10</output></label>
-      <input type="range" min="9" max="144" value="60" class="slider__input" id="opsz-input">
-    </p>
-    <h2>Other Settings</h2>
-    <p class="slider">
-      <label class="slider__label" for="size-input">
-        font-size
-        <output class="slider__output" id="size-output">60</output>
-      </label>
-      <input type="range" min="16" max="160" value="160" step="1" class="slider__input" id="size-input">
-    </p>
-    <p class="slider">
-      <label class="slider__label" for="line-height-input">
-        line-height
-        <output class="slider__output" id="line-height-output">60</output>
-      </label>
-      <input type="range" min="0.75" max="1.5" value="0.9" step="0.05" class="slider__input" id="line-height-input">
-    </p>
-    <p>
-      Font in use: <a href="https://fraunces.undercase.xyz/">Fraunces</a>
-    </p>
-  </aside>
-
+  <div class="app">
+    <main>
+      <p contenteditable="true" class="target">A <em>Clockwork</em> Orange</p>
+      <div class="css">
+        font-weight: <span class="css__output-fw"> </span>; <br>
+        font-variation-settings: <span class="css__output-fvs"> </span>;
+      </div>
+    </main>
+    <aside class="sliders">
+      <h2>
+        Font variation settings
+      </h2>
+      <p class="slider">
+        <label class="slider__label" for="wght-input">wght (Weight) <output class="slider__output" id="wght-output">100</output></label>
+        <input type="range" min="100" max="900" value="700" class="slider__input" id="wght-input">
+      </p>
+      <p class="slider">
+        <label class="slider__label" for="soft-input">SOFT (Softness) <output class="slider__output" id="soft-output">0</output></label>
+        <input type="range" min="0" max="100" value="0" class="slider__input" id="soft-input">
+      </p>
+      <p class="slider">
+        <label class="slider__label" for="wonk-input">WONK (Wonkiness) <output class="slider__output" id="wonk-output">1</output></label>
+        <input type="range" min="0" max="1" value="1" class="slider__input" id="wonk-input">
+      </p>
+      <p class="slider">
+        <label class="slider__label" for="opsz-input">opsz (Optical Size) <output class="slider__output" id="opsz-output">10</output></label>
+        <input type="range" min="9" max="144" value="60" class="slider__input" id="opsz-input">
+      </p>
+      <h2>Other Settings</h2>
+      <p class="slider">
+        <label class="slider__label" for="size-input">
+          font-size
+          <output class="slider__output" id="size-output">60</output>
+        </label>
+        <input type="range" min="16" max="160" value="160" step="1" class="slider__input" id="size-input">
+      </p>
+      <p class="slider">
+        <label class="slider__label" for="line-height-input">
+          line-height
+          <output class="slider__output" id="line-height-output">60</output>
+        </label>
+        <input type="range" min="0.75" max="1.5" value="0.9" step="0.05" class="slider__input" id="line-height-input">
+      </p>
+      <p>
+        Font in use: <a href="https://fraunces.undercase.xyz/">Fraunces</a>
+      </p>
+    </aside>
+  </div>
   <script>
 
     const target = document.querySelector('.target');
