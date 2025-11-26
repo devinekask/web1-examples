@@ -1,5 +1,5 @@
 :root {
-    /* variables here */
+  /* variables here */
 }
 
 /* Set the box-sizing property for all elements */
@@ -7,25 +7,25 @@
 *,
 *:before,
 *:after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Basic default styling  */
 
 body {
-    font-family: sans-serif;
-    line-height: 1.5;
-    /* Set the default text color */
-    color: #333;
+  font-family: sans-serif;
+  line-height: 1.5;
+  /* Set the default text color */
+  color: #333;
 }
 
 /* fluid images */
 
 img {
-    max-width: 100%;
-    height: auto;
-    /* Optional: make them block to avoid extra space */
-    display: block;
+  max-width: 100%;
+  height: auto;
+  /* Optional: make them block to avoid extra space */
+  display: block;
 }
 
 /* Default typography styling, add more styling like font-family here */
@@ -36,27 +36,32 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /* Container class to center all elements that are inside in the middle */
 
 .container {
-    /* Make this value as big as you want */
-    max-width: 75rem;
-    /* Center the container */
-    margin: 0 auto;
+  /* Make this value as big as you want */
+  max-width: 64rem;
+  /* Center the container */
+  margin: 0 auto;
 }
 
 /* visually hidden class */
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.example-section {
+  padding: 2rem 1rem;
+  background-color: gainsboro;
 }
