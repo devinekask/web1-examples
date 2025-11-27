@@ -1,5 +1,11 @@
 :root {
   /* variables here */
+  --black: #1e170d;
+  --antique-white: #f1ebcf;
+
+  --space-1: 1rem;
+  --space-15: 1.5rem;
+  --space-3: 3rem;
 }
 
 /* Set the box-sizing property for all elements */
@@ -13,10 +19,15 @@
 /* Basic default styling  */
 
 body {
+  /* Set default font family and line height */
   font-family: sans-serif;
   line-height: 1.5;
+  /* change the default font size if it's not the standard 16px */
+  font-size: 1.125rem;
   /* Set the default text color */
-  color: #333;
+  color: var(--black);
+  /* Set the default background color for the whole page */
+  background-color: var(--antique-white);
 }
 
 /* fluid images */
@@ -39,7 +50,19 @@ h6 {
   font-weight: bold;
 }
 
-/* Container class to center all elements that are inside in the middle */
+/* a basic h2 looks like this */
+
+h2 {
+  font-size: 2rem;
+}
+
+/* default link */
+
+a {
+  color: var(--black);
+}
+
+/* Container class to center all elements that are inside of it in the middle of the screen */
 
 .container {
   /* Make this value as big as you want */
@@ -61,7 +84,53 @@ h6 {
   border: 0;
 }
 
+/* specific components */
+
+/* header styles */
+
+.example-header {
+  padding: var(--space-15);
+  background-color: var(--black);
+  color: var(--antique-white);
+}
+
+.example-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* navigation styles */
+
+.example-nav__list {
+  display: flex;
+  gap: var(--space-15);
+}
+
+.example-nav__link {
+  text-decoration: none;
+  color: var(--antique-white);
+}
+
+/* section styles */
+
 .example-section {
-  padding: 2rem 1rem;
-  background-color: gainsboro;
+  padding: var(--space-3) var(--space-15);
+  background-color: var(--antique-white);
+}
+
+.example-section__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+  align-items: center;
+}
+
+.example-section__image {
+  mix-blend-mode: darken;
+}
+
+.example-section__content {
+  display: grid;
+  gap: var(--space-15);
 }

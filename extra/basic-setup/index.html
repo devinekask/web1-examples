@@ -4,25 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your title here</title>
-    <!-- favicon.ico in the root of your project -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <section class="example-section">
-      <div class="container">
-        <h1>Your content here</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          quod.
-        </p>
-        <img
-          src="https://pbs.twimg.com/profile_images/1223192505501585408/iXpunCcK.jpg"
-          alt="Devine logo"
-          width="400"
-        />
+    <header class="example-header">
+      <div class="container example-header__container">
+        <h1>Logo</h1>
+        <nav class="example-nav">
+          <ul class="example-nav__list">
+            <li class="example-nav__item">
+              <a class="example-nav__link" href="#">Home</a>
+            </li>
+            <li class="example-nav__item">
+              <a class="example-nav__link" href="#">About</a>
+            </li>
+            <li class="example-nav__item">
+              <a class="example-nav__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </section>
+    </header>
+    <main>
+      <section class="example-section">
+        <div class="container example-section__container">
+          <div class="example-section__content">
+            <h2>Your content here</h2>
+            <p>
+              A basic paragraph looks like this. A basic link looks
+              <a href="#">like this</a>.
+            </p>
+          </div>
+          <img
+            class="example-section__image"
+            src="https://cdn.cosmos.so/fb93f945-d5b1-41ff-8ea2-e5cfa863d9c3?format=jpeg"
+            alt="Random image"
+          />
+        </div>
+      </section>
+    </main>
   </body>
 </html>
