@@ -32,7 +32,8 @@ body {
 
 /* fluid images */
 
-img {
+img,
+svg {
   max-width: 100%;
   height: auto;
   /* Optional: make them block to avoid extra space */
