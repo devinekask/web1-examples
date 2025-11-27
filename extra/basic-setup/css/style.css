@@ -116,7 +116,6 @@ a {
 
 .example-section {
   padding: var(--space-3) var(--space-15);
-  background-color: var(--antique-white);
 }
 
 .example-section__container {
@@ -133,4 +132,19 @@ a {
 .example-section__content {
   display: grid;
   gap: var(--space-15);
+  justify-items: start;
+}
+
+/* (link)button styles */
+
+.example-button {
+  display: inline-block;
+  padding: var(--space-1) var(--space-15);
+  background-color: var(--black);
+  color: var(--antique-white);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4rem;
 }

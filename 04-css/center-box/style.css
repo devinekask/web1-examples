@@ -1,15 +1,32 @@
-html {
-  box-sizing: border-box;
-}
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
 }
 
 .container {
-  background-color: #fe7f2d;
   margin: 0 auto;
-  /* width: 60rem;*/
+  /* don't do this: 
+  width: 60rem; */
+  /* do this instead: */
   max-width: 60rem;
+}
+
+.header {
+  padding: 1.5rem;
+  background-color: silver;
+}
+
+.main {
+  padding: 1.5rem;
+  background-color: gainsboro;
+}
+
+.footer {
+  padding: 1.5rem;
+  background-color: whitesmoke;
 }
